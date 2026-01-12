@@ -1,7 +1,5 @@
 tensorflow-cpu==2.13.0
 numpy<2.0
-pandas
-scikit-learn
 streamlit
 nltk
 h5py<3.10
