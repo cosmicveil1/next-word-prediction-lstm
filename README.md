@@ -2,6 +2,8 @@
 
 Lightweight demo that trains an LSTM language model on Shakespeare's Hamlet (NLTK Gutenberg) and serves next-word predictions through a Streamlit UI.
 
+** Live Demo:** [https://next-word-prediction-lstm-4d5jelusag4weborb5jdgv.streamlit.app/](https://next-word-prediction-lstm-4d5jelusag4weborb5jdgv.streamlit.app/)
+
 ## Repository layout
 - [LSTM RNN/app.py](LSTM%20RNN/app.py) – Streamlit UI that loads the trained Keras model and tokenizer.
 - [LSTM RNN/experiments.ipynb](LSTM%20RNN/experiments.ipynb) – notebook to download Hamlet, tokenize, build n-gram sequences, train the LSTM, and save artifacts.
