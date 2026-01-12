@@ -2,5 +2,5 @@ tensorflow-cpu==2.20.0
 numpy<2.0
 streamlit
 nltk
-h5py<3.10
-protobuf<4
+h5py>=3.11,<4
+protobuf<5
