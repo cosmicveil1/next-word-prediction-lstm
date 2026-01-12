@@ -3,12 +3,16 @@ import numpy as np
 import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import os
+
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the trained model
-model = load_model('next_word_prediction_model.h5')
+model = load_model(os.path.join(script_dir, 'next_word_prediction_model.h5'))
 
 # Load the tokenizer
-with open('tokenizer.pickle', 'rb') as handle:
+with open(os.path.join(script_dir, 'tokenizer.pickle'), 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 ## Function to predict the next word
