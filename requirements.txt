@@ -1,5 +1,6 @@
 tensorflow-cpu==2.20.0
-numpy==1.26.4
+numpy==2.3.5
+ml-dtypes==0.5.4
 streamlit
 nltk
 h5py>=3.11,<4
