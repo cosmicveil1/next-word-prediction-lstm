@@ -38,3 +38,16 @@ Then open the provided local URL. The default prompt is "to be or not to be"; en
 - The model expects lowercase input; the notebook lowercases the corpus during preprocessing.
 - Sequences are padded to `max_sequence_len - 1`; the app infers `max_sequence_len` from the model input shape at runtime.
 - If pushing to GitHub, ensure `venv/` stays ignored (already in `.gitignore`).
+
+## Model Analysis & Limitations
+- Observed that prediction quality degrades as the input context grows longer, highlighting the difficulty of recurrent networks in modeling long-range dependencies.
+- The LSTM tends to emphasize recent tokens over distant context, which can limit coherence in longer sequences.
+- Training on a relatively small corpus (Hamlet) restricts vocabulary diversity and generalization.
+- These limitations motivate the use of attention-based or transformer architectures for improved long-context modeling in future work.
+
+## Future Work
+- Compare LSTM performance with transformer-based language models on the same corpus.
+- Evaluate perplexity and top-k accuracy to quantify prediction quality.
+- Extend the interface to display multiple candidate predictions with confidence scores.
+
+
